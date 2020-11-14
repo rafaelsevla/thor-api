@@ -28,3 +28,9 @@ cp .env.example .env
 ```
 flask run
 ```
+
+
+### Endpoints:
+[ GET ] /city?id=(id_from_advisor)
+[ POST ] /city?id=(id_from_advisor)&days=(amount_days)
+[ GET ] /analyze?initial_date=(date)&finish_date=(date)
