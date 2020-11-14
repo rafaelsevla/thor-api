@@ -7,11 +7,12 @@
 virtualenv -p python3 .venv
 ```
 ```
-pip install -r requirements.txt
-```
-```
 source .venv/bin/activate
 ```
+```
+pip install -r requirements.txt
+```
+
 
 ### Add token on .env
 
@@ -31,6 +32,6 @@ flask run
 
 
 ### Endpoints:
-[ GET ] /city?id=(id_from_advisor)
-[ POST ] /city?id=(id_from_advisor)&days=(amount_days)
-[ GET ] /analyze?initial_date=(date)&finish_date=(date)
+> [ GET ] /city?id=(id_from_advisor)
+> [ POST ] /city?id=(id_from_advisor)&days=(amount_days)
+> [ GET ] /analyze?initial_date=(date)&finish_date=(date)

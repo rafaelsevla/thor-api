@@ -42,4 +42,3 @@ class Forecast(db.Model):
 
     def __repr__(self):
         return 'Forecast in {0}'.format(self.date)
-

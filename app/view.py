@@ -1,5 +1,4 @@
 import os
-from flask.globals import session
 import requests
 from app import app, db
 from datetime import datetime
