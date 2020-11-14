@@ -7,7 +7,7 @@ git clone git@github.com:rafaelsevla/thor-api.git
 cd thor-api
 ```
 ```
-virtualenv -p python3 .venv
+python3 -m venv .venv or virtualenv -p python3 .venv
 ```
 ```
 source .venv/bin/activate
