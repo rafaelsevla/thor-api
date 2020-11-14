@@ -1,8 +1,11 @@
 ## Getting Started
 
-### Create virtual env, install dependencies and active virtual env
+### Clone project, create virtual env, install dependencies and active virtual env
 
-
+```
+git clone git@github.com:rafaelsevla/thor-api.git
+cd thor-api
+```
 ```
 virtualenv -p python3 .venv
 ```
