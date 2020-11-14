@@ -20,14 +20,14 @@ class City(db.Model):
         }
     
     def get_or_create(self):
-        city = City.query.one_or_none()
+        city_id = db.session.query(City.id).filter_by(apiadvisor_id=self.apiadvisor_id).scalar()
 
-        if city is None:
-            db.session.add(self)
-            db.session.commit()
-            return self.id
+        if city_id is not None:
+            return city_id
 
-        return city.id
+        db.session.add(self)
+        db.session.commit()
+        return self.id
 
     
 class Forecast(db.Model):
