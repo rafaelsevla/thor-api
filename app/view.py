@@ -22,7 +22,7 @@ def city():
 
     param_days = request.args.get('days', None)
     if (param_days == None):
-        return { 'reason': 'Missing id param' }, 400
+        return { 'reason': 'Missing days param' }, 400
 
     token = os.getenv('WEATHER_API_TOKEN')
     url = 'http://apiadvisor.climatempo.com.br/api/v1/forecast/locale/{0}' \
